@@ -18,16 +18,23 @@ function esPrimo(numero) {
 }
 
 
-// for (let index = 15; index > 0; index--) {
+function ListaPrimos(numero) {
 
-//     const primo = esPrimo(index);
+    let listado = [];
 
-//     if (primo) {
-//         console.log(`Numero Primo: ${index}`)
-//     }
+    for (let index = numero; index > 0; index--) {
 
-// }
+        const primo = esPrimo(index);
+
+        if (primo) {
+            listado.push(index);
+        }
+    }
+
+    return listado
+}
 
 module.exports = {
-    esPrimo
+    esPrimo,
+    ListaPrimos
 }

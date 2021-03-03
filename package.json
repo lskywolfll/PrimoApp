@@ -1,8 +1,8 @@
 {
-  "name": "Nodejs",
+  "name": "Primos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js"
   },
@@ -16,6 +16,8 @@
     "jest": "^26.6.3"
   },
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "inquirer": "^8.0.0",
+    "uuid": "^8.3.2"
   }
 }
