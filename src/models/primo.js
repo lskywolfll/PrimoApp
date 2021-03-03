@@ -15,7 +15,7 @@ class Primo {
 
 
     mostrarLista() {
-        console.log(this.listaPrimos);
+        console.log("Listado de numeros primos encontrados:", this.listaPrimos);
     }
 }
 

@@ -10,6 +10,10 @@ function esPrimo(numero) {
             divisores++;
         }
 
+        if (numero === 1) {
+            divisores++;
+        }
+
     }
 
     const validacion = (divisores === 2) ? true : false;
