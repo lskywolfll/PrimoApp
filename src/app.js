@@ -1,6 +1,3 @@
-
-require("colors");
-const { parse } = require("uuid");
 const Primos = require("./models/primos");
 const {
     menu,
