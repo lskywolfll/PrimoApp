@@ -11,7 +11,5 @@ test('Listado de primos a partir del numero 2', () => {
     const numero = 2;
     const primo = new Primo(numero);
 
-    console.log(primo.listaPrimos)
-
     expect(primo.listaPrimos).toStrictEqual([2, 1])
 });
