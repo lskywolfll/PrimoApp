@@ -10,10 +10,6 @@ function esPrimo(numero) {
             divisores++;
         }
 
-        if (numero === 1) {
-            divisores++;
-        }
-
     }
 
     const validacion = (divisores === 2) ? true : false;
@@ -30,7 +26,7 @@ function ListaPrimos(numero) {
 
         const primo = esPrimo(index);
 
-        if (primo) {
+        if (primo || index === 1) {
             listado.push(index);
         }
     }

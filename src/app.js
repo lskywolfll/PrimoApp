@@ -1,5 +1,6 @@
 
 require("colors");
+const { parse } = require("uuid");
 const Primos = require("./models/primos");
 const {
     menu,
@@ -20,7 +21,7 @@ const main = async () => {
             case "1":
                 // Buscar Primos
                 const numero = await leerInput("Numero para buscar primos: ");
-                primos.crearTarea(numero);
+                primos.crearTarea(parseInt(numero));
 
                 break;
             case "2":
